@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/paper_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_lighten_3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/paper_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/verticalSpacing_body" >
+
+        <TextView
+            style="@style/text_title_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <View
+        style="@drawable/zdepth1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zdepth1"
+        android:background="@drawable/zdepth1" />
+
+</LinearLayout>

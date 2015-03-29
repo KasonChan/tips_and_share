@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/paper_base"
+    android:layout_width="@dimen/screen_small_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- Custom app bar -->
+
+    <LinearLayout
+        style="@style/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/verticalSpacing_actionBar" >
+
+        <LinearLayout
+            android:background="@color/lightBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/horizontalSpacing_icon" >
+
+            <View
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:background="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_title_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlue"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <View
+        style="@drawable/zdepth1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zdepth1"
+        android:background="@drawable/zdepth1" />
+
+    <ScrollView
+        style="@style/paper_base_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_no_margin" >
+
+        <!-- Add tips card -->
+
+        <LinearLayout
+            style="@style/paper_card_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/verticalSpacing_body" >
+
+            <TextView
+                style="@style/text_headline_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_title"
+                android:minHeight="@dimen/verticalSpacing_body"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/add_tips" />
+
+            <TextView
+                style="@style/text_body2_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/after_tax_description" />
+
+            <EditText
+                android:id="@+id/after_tax"
+                style="@style/text_body1_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:inputType="number|numberDecimal"
+                android:padding="@dimen/paper_padding"
+                android:textColorHint="@color/blue_accent_3" />
+
+            <TextView
+                style="@style/text_body2_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/tips_description" />
+
+            <TextView
+                android:id="@+id/tips_amount"
+                style="@style/text_body2_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/tips_amount" />
+
+            <LinearLayout
+                style="@style/paper_card_base_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/verticalSpacing_body" >
+
+                <SeekBar
+                    android:id="@+id/add_tips_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card"
+                    android:max="25"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_body2_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:focusable="true"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/after_tips_description" />
+
+            <TextView
+                android:id="@+id/after_tips"
+                style="@style/text_body1_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:padding="@dimen/paper_padding" />
+
+            <!-- Add tips card shadow -->
+
+            <View
+                style="@drawable/card_zdepth1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_zdepth1_height"
+                android:background="@drawable/card_zdepth1" />
+
+            <View style="@style/divider" />
+
+            <!-- Split amount card -->
+
+            <TextView
+                style="@style/text_headline_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_title"
+                android:minHeight="@dimen/verticalSpacing_body"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/split" />
+
+            <TextView
+                style="@style/text_body2_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/split_description" />
+
+            <TextView
+                android:id="@+id/split_amount"
+                style="@style/text_body2_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/split_amount" />
+
+            <LinearLayout
+                style="@style/paper_card_base_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/verticalSpacing_body" >
+
+                <SeekBar
+                    android:id="@+id/split_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card"
+                    android:max="8"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_body2_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:focusable="true"
+                android:padding="@dimen/paper_padding"
+                android:text="@string/after_splits_description" />
+
+            <TextView
+                android:id="@+id/after_splits"
+                style="@style/text_body1_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:padding="@dimen/paper_padding" />
+
+            <!-- Split amount card shadows -->
+
+            <View
+                style="@drawable/card_zdepth1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_zdepth1_height"
+                android:background="@drawable/card_zdepth1" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

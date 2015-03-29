@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout"
+    style="@style/paper_card"
+    android:layout_width="@dimen/screen_small_width"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/toast_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_lighten_1"
+        android:minHeight="@dimen/verticalSpacing_body" >
+
+        <TextView
+            android:id="@+id/toast_msg"
+            style="@style/text_body1_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_lighten_1" />
+    </LinearLayout>
+
+    <View
+        style="@drawable/card_zdepth1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_zdepth1_height"
+        android:background="@drawable/card_zdepth1" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App name -->
+    <string name="app_name">T&#038;S</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Add tips -->
+    <string name="add_tips">Add tips</string>
+    <string name="after_tax_description">Enter the total amount after tax</string>
+    <string name="tips_description">Select the amount of tips</string>
+    <string name="tips_amount">0%</string>
+    <string name="after_tips_description">Amount to pay after tips</string>
+
+    <!-- Split -->
+    <string name="split">Split</string>
+    <string name="split_amount">0</string>
+    <string name="split_description">Select the number of splits</string>
+    <string name="after_splits_description">Amount to pay after splits</string>
+    
+</resources>
